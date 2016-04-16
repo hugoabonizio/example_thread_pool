@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'example_thread_pool/version'
+require 'my_thread_pool/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "example_thread_pool"
-  spec.version       = ExampleThreadPool::VERSION
+  spec.name          = "my_thread_pool"
+  spec.version       = MyThreadPool::VERSION
   spec.authors       = ["Hugo Abonizio"]
   spec.email         = ["hugo_abonizio@hotmail.com"]
 
