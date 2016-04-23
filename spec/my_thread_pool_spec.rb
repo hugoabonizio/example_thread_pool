@@ -9,7 +9,7 @@ describe MyThreadPool do
 #     expect(false).to eq(true)
 #   end
   before do
-    @pool = MyThreadPool.new(size: 2)
+    @pool = MyThreadPool.new
   end
   
   it 'should perform a task' do

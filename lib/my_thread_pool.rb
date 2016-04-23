@@ -1,10 +1,11 @@
-require "my_thread_pool/version"
+# require './my_thread_pool/version'
 
 class MyThreadPool
-  def initialize(size: 2)
+  def initialize(size = 2)
     @queue = Queue.new
     @threads = Array.new(size) do
       Thread.new do
+        id = (rand * 100).to_i
         while task = @queue.pop and !task.nil?
           task.call
         end
